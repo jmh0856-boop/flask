@@ -26,8 +26,8 @@
 - **차이점**: ORM은 모델 정의(Base.metadata.create_all())를 바탕으로 스키마를 생성하고, 런타임에는 객체(모델 인스턴스)를 DB레코드(스키마 내 행)로, 레코드를 객체로 변환하는 '매핑'작업을 수행합니다
 
 ## CRUD 테스팅
-- CRUD는 Create(생성), Read(읽기), Update(수정), Delete(삭제)의 약자로, 데이터베이스의 기본적인 네 가지 작업을 말합니다. SQLAlchemy에서는 session.add(), session.query().all, session.commit(), session.delete() 등의 메서드를 사용하여 이러한 작업을 테스트하고 수행합니다.
-- 
+- CRUD는 Create(생성), Read(읽기), Update(수정), Delete(삭제)의 약자로, 데이터베이스의 기본적인 네 가지 작업을 말합니다. SQLAlchemy에서는 session.add(), session.query().all, session.commit(), session.delete() 등의 메소드를 사용하여 이러한 작업을 테스트하고 수행합니다.
+
 ## 직렬화와 역직렬화의 의미
 - **직렬화(Serialization)**: 메모리 상의 **파이썬 객체 상태**를 네트워크 전송이나 파일 저장이 가능한 바이트 스트림 또는 JSON과 같은 연속적인 형식(serial format)으로 변환하는 과정입니다.
 - **역직렬화(Deserialization)**: 반대로 바이트 스트림이나 JSON 문자열 형태의 데이터를 다시 **원본 파이썬 객체로 복원**하는 과정입니다.
